@@ -41,7 +41,7 @@ let buildDir = "./build/"
 let tempDir = "./temp/"
 
 System.Environment.CurrentDirectory <- __SOURCE_DIRECTORY__
-let changelogFilename = "CHANGELOG.md"
+let changelogFilename = "../CHANGELOG.md"
 let changelog = Changelog.load changelogFilename
 let latestEntry = changelog.LatestEntry
 

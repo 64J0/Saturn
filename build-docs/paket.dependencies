@@ -1,7 +1,7 @@
 source https://api.nuget.org/v3/index.json
 
 storage: none
-framework: netstandard2.0
+framework: net5.0
 
 nuget Expecto
 nuget NSubstitute
@@ -23,7 +23,7 @@ nuget FSharp.Control.Websockets >= 0.2
 
 group Docs
   source https://api.nuget.org/v3/index.json
-  framework: netstandard2.0
+  framework: net5.0
   storage: local
 
   nuget FSharp.Formatting 4.0.0-rc1
@@ -31,14 +31,14 @@ group Docs
 
 group DocsAsp
   source https://api.nuget.org/v3/index.json
-  framework: netstandard2.0
+  framework: net5.0
   storage: local
 
   nuget Microsoft.AspNetCore.App.Ref
 
 group Build
     source https://api.nuget.org/v3/index.json
-    framework:netstandard2.0
+    framework: net5.0
     
     nuget Fake.Core.Target
     nuget Fake.Core.ReleaseNotes
