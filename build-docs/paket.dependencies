@@ -1,0 +1,53 @@
+source https://api.nuget.org/v3/index.json
+
+storage: none
+framework: netstandard2.0
+
+nuget Expecto
+nuget NSubstitute
+nuget BenchmarkDotNet
+nuget Microsoft.AspNetCore.TestHost
+
+nuget Giraffe
+
+nuget Microsoft.AspNetCore.Authentication.JwtBearer
+nuget Microsoft.AspNetCore.Authentication.Google
+nuget Microsoft.AspNetCore.Authentication.OpenIdConnect
+nuget Microsoft.NET.Sdk.Functions
+nuget protobuf-net.Grpc.AspNetCore
+nuget protobuf-net.Grpc.HttpClient
+nuget System.ServiceModel.Primitives
+nuget FSharp.Control.Websockets >= 0.2
+
+# as a library, saturn should have a lower min version of fsharp.core. users can float
+
+group Docs
+  source https://api.nuget.org/v3/index.json
+  framework: netstandard2.0
+  storage: local
+
+  nuget FSharp.Formatting 4.0.0-rc1
+  nuget Newtonsoft.Json 12.0.3
+
+group DocsAsp
+  source https://api.nuget.org/v3/index.json
+  framework: netstandard2.0
+  storage: local
+
+  nuget Microsoft.AspNetCore.App.Ref
+
+group Build
+    source https://api.nuget.org/v3/index.json
+    framework:netstandard2.0
+    
+    nuget Fake.Core.Target
+    nuget Fake.Core.ReleaseNotes
+    nuget Fake.BuildServer.TeamFoundation
+    nuget Fake.DotNet.Cli
+    nuget Fake.Installer.Wix
+    nuget Fake.IO.Zip
+    nuget Fake.Tools.Git
+    nuget Microsoft.Web.Administration
+    nuget Fake.DotNet.Testing.Expecto
+    nuget Fake.Api.GitHub
+    nuget Fake.Core.UserInput

@@ -1,0 +1,12 @@
+group Build
+Fake.Core.Target
+Fake.BuildServer.TeamFoundation
+Fake.DotNet.Cli
+Fake.Installer.Wix
+Fake.IO.Zip
+Fake.Tools.Git
+Microsoft.Web.Administration
+Fake.DotNet.Testing.Expecto
+Fake.Api.GitHub
+Fake.Core.UserInput
+Fake.Core.ReleaseNotes
