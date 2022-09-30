@@ -10,8 +10,8 @@ on:
 jobs:
   build:
 
-    # runs-on: windows-latest
-    runs-on: ubuntu-20.04
+    runs-on: windows-latest
+    # runs-on: ubuntu-20.04
 
     steps:
     - name: Checkout
@@ -20,8 +20,6 @@ jobs:
       uses: actions/setup-dotnet@v3
       with:
         dotnet-version: '5.0.408'
-    - name: Set the right dotnet SDK version
-      run: dotnet new globaljson --sdk-version 5.0.408 --force
     - name: Restore tools
       working-directory: build-docs
       run: dotnet tool restore
