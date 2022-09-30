@@ -71,7 +71,7 @@ let getContent' (fileContent : string) (fn: string) =
          doc.Paragraphs
         |> List.skip 3 //Skip opening ---, config content, and closing ---
     let doc = doc.With(paragraphs = ps)
-    let html = Literate.WriteHtml(doc, lineNumbers = false, tokenKindToCss = tokenToCss)
+    let html = Literate.WriteHtml(doc, lineNumbers = false)
                        .Replace("lang=\"fsharp", "class=\"language-fsharp")
     content, html
 
