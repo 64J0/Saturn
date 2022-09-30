@@ -41,7 +41,7 @@ let loader (projectRoot: string) (siteContet: SiteContents) =
       let libs =
         [
           Path.Combine (projectRoot, "..", "temp")
-          Path.Combine (projectRoot, "..", "packages", "docsasp", "Microsoft.AspNetCore.app.ref", "ref", "net6.0")
+          Path.Combine (projectRoot, "..", "packages", "docsasp", "Microsoft.AspNetCore.App.Ref", "ref", "net6.0")
         ]
       let sourceFolder = Path.Combine(projectRoot, "..")
       for (label, dll) in dlls do
