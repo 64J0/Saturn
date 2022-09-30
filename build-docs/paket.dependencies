@@ -26,7 +26,7 @@ group Docs
   framework: net5.0
   storage: local
 
-  nuget FSharp.Formatting 4.0.0-rc1
+  nuget FSharp.Formatting 4.1.0
   nuget Newtonsoft.Json 12.0.3
 
 group DocsAsp
