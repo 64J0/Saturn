@@ -1,9 +1,10 @@
 name: Publish
 
-on:
-  push:
-    tags:
-      - 'v*' # Publish on any new tag starting with v
+# on:
+#   push:
+#     tags:
+#       - 'v*' # Publish on any new tag starting with v
+on: workflow_dispatch
 
 jobs:
   build:
