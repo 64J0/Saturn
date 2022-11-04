@@ -4,18 +4,18 @@ source https://api.nuget.org/v3/index.json
 storage: none
 framework: netcoreapp3.1
 
-nuget Expecto
-nuget Newtonsoft.Json
-nuget NSubstitute
+nuget Expecto <= 9.0.2
+nuget Newtonsoft.Json <= 12.0.3
+nuget NSubstitute <= 4.2.2
 nuget System.Threading.Tasks.Dataflow >= 4.9
-nuget BenchmarkDotNet
+nuget BenchmarkDotNet <= 0.12.1
 
 nuget Giraffe ~> 4.0
 nuget Microsoft.AspNetCore.Authentication.JwtBearer < 3.1
 nuget Microsoft.AspNetCore.Authentication.Google < 3.1
 nuget Microsoft.AspNetCore.Authentication.OpenIdConnect < 3.1
 nuget Microsoft.NET.Sdk.Functions < 3.1
-nuget protobuf-net.Grpc.AspNetCore
+nuget protobuf-net.Grpc.AspNetCore <= 1.0.136
 nuget protobuf-net.Grpc.HttpClient
 nuget FSharp.Control.Websockets >= 0.2
 nuget FSharp.Core >= 4.2.3
@@ -25,16 +25,16 @@ group Docs
   framework: netstandard2.0
   storage: symlink
 
-  nuget FSharp.Formatting prerelease
-  nuget Markdig
-  nuget Newtonsoft.Json
+  nuget FSharp.Formatting <= 7.2.9
+  nuget Markdig <= 0.22.1
+  nuget Newtonsoft.Json <= 12.0.3
 
 group DocsAsp
   source https://api.nuget.org/v3/index.json
   framework: netcoreapp3.1
   storage: symlink
 
-  nuget Microsoft.AspNetCore.App.Ref
+  nuget Microsoft.AspNetCore.App.Ref <= 5.0.0
 
 group Build
   source https://api.nuget.org/v3/index.json
