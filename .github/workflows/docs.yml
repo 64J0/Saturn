@@ -30,14 +30,13 @@ jobs:
       run: npm install -g sass
     - name: Restore tools
       working-directory: ./docs/
-      run: |
-        dotnet tool restore
-        dotnet paket restore
-    # - name: Run Fornax
-    #   run: dotnet run -- Docs
-    - name: Build
-      working-directory: ./docs/src
-      run: dotnet fornax build
+      run: dotnet tool restore
+    - name: Run Fornax
+      working-directory: ./docs/
+      run: dotnet fake build -t Docs
+    # - name: Build
+    #   working-directory: ./docs/src
+    #   run: dotnet fornax build
     - name: Deploy
       uses: peaceiris/actions-gh-pages@v3
       with:
