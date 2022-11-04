@@ -30,7 +30,9 @@ jobs:
       run: npm install -g sass
     - name: Restore tools
       working-directory: ./docs/
-      run: dotnet tool restore
+      run: |
+        dotnet tool restore
+        dotnet paket restore
     # - name: Run Fornax
     #   run: dotnet run -- Docs
     - name: Build
