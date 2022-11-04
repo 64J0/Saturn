@@ -33,7 +33,7 @@ jobs:
       run: dotnet tool restore
     - name: Run Fornax
       working-directory: ./docs/
-      run: dotnet fake build -t Docs
+      run: dotnet fake -v build -t Docs
     # - name: Build
     #   working-directory: ./docs/src
     #   run: dotnet fornax build
