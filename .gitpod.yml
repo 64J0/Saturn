@@ -1,9 +1,0 @@
-image:
-  file: .devcontainer/Dockerfile
-tasks:
-  - before: dotnet tool restore
-    command: dotnet restore
-vscode:
-  extensions:
-    - muhammad-sammy.csharp
-    - ionide.ionide-fsharp
